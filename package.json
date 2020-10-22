@@ -1,0 +1,30 @@
+{
+  "name": "reactupdateproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "electron/main.js",
+  "dependencies": {
+    "asyncawait": "^3.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "electron-prebuilt": "^1.4.13",
+    "electron-updater": "^4.3.5"
+  },
+  "devDependencies": {
+    "electron": "^9.2.0",
+    "electron-builder": "^22.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvgeniyChygyitsev/electrone-update.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
